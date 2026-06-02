@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultations & Appointments | FURAT</title>
+    <meta name="description" content="Book an expert consultation with our specialists at FURAT.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/consultation.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header header-light">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="FURAT Logo" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#shop">Shop</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#booking-section" class="btn btn-primary d-none-mobile btn-header">Book an Appointment</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button class="close-menu-btn"><i class="fas fa-times"></i></button>
+            <a href="index.html" class="logo mb-4" style="display:block; text-align:center;">
+                <img src="assets/logo.png" alt="FURAT Logo" style="height: 65px; margin: 0 auto;">
+            </a>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <a href="#booking-section" class="btn btn-primary w-100 text-center"
+                style="display:block; margin-top:2rem;">Book an Appointment</a>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section style="background-color: var(--color-primary); padding: 100px 2rem 40px; text-align: center;">
+        <div class="container reveal">
+            <h1 style="font-family: var(--font-heading); color: var(--color-white); font-size: 3rem; margin-bottom: 0.5rem; font-weight: 600;">Expert Consultations</h1>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.5;">Connect with our highly qualified specialists for personalized traditional and modern care. Experience healing redefined.</p>
+        </div>
+    </section>
+
+    <!-- DOCTOR PROFILES SECTION -->
+    <section class="consultations-section" style="padding: var(--section-padding); background-color: var(--color-bg);">
+        <div class="container reveal">
+            
+            <div class="specialist-grid">
+                
+                <!-- Dr. OKM -->
+                <div class="specialist-card" data-doctor-id="dr-okm">
+                    <div class="card-img">
+                        <img src="doctors/dr.%20okm.jpeg" alt="Dr. OKM">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="doctor-name">Dr. OKM</h3>
+                        <span class="doctor-title">Professor | Holistic Lifestyle Consultant</span>
+                        
+                        <!-- Hidden Details for Modal -->
+                        <div class="hidden-details" style="display: none;">
+                            <div class="modal-specialties">
+                                <span class="specialty-tag">Personalised Diabetes Care</span>
+                                <span class="specialty-tag">Joint Pain Consultant</span>
+                                <span class="specialty-tag">Holistic Neuro Care</span>
+                                <span class="specialty-tag">Holistic Gastro care</span>
+                                <span class="specialty-tag">Unani Lifestyle</span>
+                            </div>
+                            <div class="modal-bio">Specialized in treating chronic conditions through a holistic approach, Dr. OKM combines deep Unani wisdom with modern lifestyle adjustments for long-term healing.</div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-know-more">Know More</button>
+                            <button class="btn book-doctor-btn" data-doctor="dr-okm">Book <i class="fas fa-calendar-check" style="margin-left: 5px;"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. A. P. Shahul Hameed -->
+                <div class="specialist-card" data-doctor-id="dr-shahul">
+                    <div class="card-img">
+                        <img src="doctors/shahul.jpeg" alt="Dr. A. P. Shahul Hameed">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="doctor-name">Dr. A. P. Shahul Hameed</h3>
+                        <span class="doctor-title">Professor Dermatology | Cosmetology</span>
+                        
+                        <!-- Hidden Details for Modal -->
+                        <div class="hidden-details" style="display: none;">
+                            <div class="modal-specialties">
+                                <span class="specialty-tag">Psoriasis</span>
+                                <span class="specialty-tag">Eczema</span>
+                                <span class="specialty-tag">Dandruff</span>
+                                <span class="specialty-tag">Hair Fall</span>
+                                <span class="specialty-tag">Fungal Infection</span>
+                                <span class="specialty-tag">Pigmentation / Vitiligo</span>
+                                <span class="specialty-tag">Varicose Ulcer</span>
+                            </div>
+                            <div class="modal-bio">An expert in dermatology and cosmetology, providing natural and effective Unani remedies for complex skin and hair conditions.</div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-know-more">Know More</button>
+                            <button class="btn book-doctor-btn" data-doctor="dr-shahul">Book <i class="fas fa-calendar-check" style="margin-left: 5px;"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. U Mujeeb -->
+                <div class="specialist-card" data-doctor-id="dr-mujeeb">
+                    <div class="card-img">
+                        <img src="doctors/mujeeb.jpeg" alt="Dr. U Mujeeb">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="doctor-name">Dr. U Mujeeb</h3>
+                        <span class="doctor-title">Professor | Ortho-Neuro Specialist</span>
+                        
+                        <!-- Hidden Details for Modal -->
+                        <div class="hidden-details" style="display: none;">
+                            <div class="modal-credentials" style="font-weight: 500; margin-bottom: 1rem; color: var(--color-primary);">BUMS, MD, PGDEMS, MOH(UAE)</div>
+                            <div class="modal-specialties">
+                                <span class="specialty-tag">Ortho–Neuro</span>
+                                <span class="specialty-tag">Spine & Joint</span>
+                                <span class="specialty-tag">Sports Injuries</span>
+                                <span class="specialty-tag">Stroke Rehab</span>
+                                <span class="specialty-tag">Varicose Ulcers</span>
+                            </div>
+                            <div class="modal-bio">Specializing in orthopedics, neuro-rehabilitation, and sports injuries, offering targeted therapies to restore mobility and alleviate pain.</div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-know-more">Know More</button>
+                            <button class="btn book-doctor-btn" data-doctor="dr-mujeeb">Book <i class="fas fa-calendar-check" style="margin-left: 5px;"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="booking-section" class="dot-grid-bg" style="padding: var(--section-padding); background-color: var(--color-surface); position: relative; overflow: hidden;">
+        <div class="container reveal">
+            <div class="text-center">
+                <h2 class="section-title">Schedule Your Visit</h2>
+                <div class="section-divider"><i class="far fa-calendar-alt"></i></div>
+                <p class="section-subtitle">Select your preferred specialist and time. Our team will confirm your appointment shortly.</p>
+            </div>
+            
+            <div class="booking-form-wrapper glass-booking-card">
+                <form action="#" method="POST" id="booking-form">
+
+                    <div class="form-row">
+                        <div class="form-group glass-input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group glass-input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your contact number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group glass-input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="form-group glass-input-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group glass-input-group" style="margin-bottom: 1.5rem;">
+                        <label for="doctor">Select Specialist</label>
+                        <select id="doctor" class="form-control" required>
+                            <option value="" disabled selected>-- Choose a specialist --</option>
+                            <option value="dr-okm">Dr. OKM (Holistic Lifestyle)</option>
+                            <option value="dr-shahul">Dr. A. P. Shahul Hameed (Dermatology)</option>
+                            <option value="dr-mujeeb">Dr. U Mujeeb (Ortho-Neuro)</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group glass-input-group" style="margin-bottom: 2rem;">
+                        <label for="message">Additional Notes or Symptoms</label>
+                        <textarea id="message" class="form-control" placeholder="Briefly describe your symptoms or reason for visit..." rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-testimonial-cta w-100" style="display:block; text-align:center; width:100%; border:none; cursor:pointer; font-size: 1.1rem; padding: 1rem;">Confirm Appointment <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo mb-3">
+                        <img src="assets/logo.png" alt="FURAT Logo" style="height: 70px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 1rem;">Forum for Unified
+                        Research and Advancement in Traditional Medicine. Committed to holistic care, research, and the
+                        advancement of Unani medicine.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Patients</h4>
+                    <ul class="footer-links">
+                        <li><a href="#booking-section">Book an Appointment</a></li>
+                        <li><a href="consultation.html">Consultations</a></li>
+                        <li><a href="therapies.html">Therapies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info list-unstyled">
+                        <li>
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@furathealthcare.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>123, Wellness Avenue, Health City, India - 000001</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FURAT - Forum for Unified Research and Advancement in Traditional Medicine. All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Doctor Modal Popup -->
+    <div id="doctor-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body-content">
+                <div class="modal-header">
+                    <img id="modal-img" src="" alt="Doctor Photo">
+                    <div class="modal-header-text">
+                        <h2 id="modal-name"></h2>
+                        <h4 id="modal-title"></h4>
+                        <div id="modal-credentials"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h5>Specialties</h5>
+                    <div id="modal-specialties-container" class="doctor-specialties"></div>
+                    <h5>Biography</h5>
+                    <p id="modal-bio-text"></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-book-btn" class="btn btn-primary btn-testimonial-cta w-100">Book Appointment <i class="fas fa-calendar-plus" style="margin-left: 8px;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        // Logic to pre-select doctor in the form when clicking "Book Consultation"
+        document.querySelectorAll('.book-doctor-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const doctorId = e.currentTarget.getAttribute('data-doctor');
+                const doctorSelect = document.getElementById('doctor');
+                
+                // Select the option
+                if (doctorSelect) {
+                    doctorSelect.value = doctorId;
+                }
+                
+                // Smooth scroll to booking section
+                document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

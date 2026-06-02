@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | FURAT</title>
+    <meta name="description" content="Book your appointment and get in touch with FURAT.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header header-light">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="FURAT Logo" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#shop">Shop</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary d-none-mobile btn-header">Book an Appointment</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button class="close-menu-btn"><i class="fas fa-times"></i></button>
+            <a href="index.html" class="logo mb-4" style="display:block; text-align:center;">
+                <img src="assets/logo.png" alt="FURAT Logo" style="height: 65px; margin: 0 auto;">
+            </a>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary w-100 text-center"
+                style="display:block; margin-top:2rem;">Book an Appointment</a>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container reveal">
+            <h1>Contact & Booking</h1>
+            <p>Reach out to us or schedule your consultation online.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-page-section">
+        <div class="container reveal">
+            <div class="contact-layout">
+
+                <!-- Left: Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Our Location</h4>
+                            <p>123 Wellness Avenue<br>Health City, India - 000001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Call Us</h4>
+                            <p>+91 123 456 7890<br>+91 987 654 3210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Email Us</h4>
+                            <p>info@furathealthcare.com<br>appointments@furathealthcare.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="far fa-clock"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Booking Form -->
+                <div class="booking-form-wrapper">
+                    <h3>Request an Appointment</h3>
+                    <form action="#" method="POST" id="booking-form">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Your contact number"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="Your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor">Select Specialist / Service</label>
+                            <select id="doctor" class="form-control" required>
+                                <option value="" disabled selected>-- Choose an option --</option>
+                                <option value="dr-okm">Dr. OKM (Holistic Lifestyle)</option>
+                                <option value="dr-khuloodha">Dr. Fathimathul Khuloodha (General Physician)</option>
+                                <option value="dr-mujeeb">Dr. U Mujeeb (Ortho-Neuro)</option>
+                                <option value="dr-shahul">Dr. A. P. Shahul Hameed (Dermatology)</option>
+                                <option value="maryam-salwa">Maryam Salwa (Psychology)</option>
+                                <option value="therapies">Therapies & Clinical Services</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Notes or Symptoms</label>
+                            <textarea id="message" class="form-control"
+                                placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100"
+                            style="display:block; text-align:center; width:100%; border:none; cursor:pointer;">Confirm
+                            Booking Request</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo mb-3">
+                        <img src="assets/logo.png" alt="FURAT Logo"
+                            style="height: 70px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 1rem;">Forum for Unified
+                        Research and Advancement in Traditional Medicine. Committed to holistic care, research, and the
+                        advancement of Unani medicine.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Patients</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Book an Appointment</a></li>
+                        <li><a href="index.html#services">Consultations</a></li>
+                        <li><a href="therapies.html">Therapies</a></li>
+                        <li><a href="index.html#services">Wellness Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info list-unstyled">
+                        <li>
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@furathealthcare.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>123, Wellness Avenue, Health City, India - 000001</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FURAT - Forum for Unified Research and Advancement in Traditional Medicine. All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
