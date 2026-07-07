@@ -1,0 +1,4 @@
+.about-page-content {
+  padding: var(--section-padding);
+  background-color: var(--color-bg);
+}

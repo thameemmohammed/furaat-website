@@ -1,0 +1,311 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-title-huge {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid,
+  .team-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .therapies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-title-huge {
+    font-size: 4rem;
+  }
+
+  .hero-bg-split {
+    opacity: 0.35;
+    -webkit-mask-image: none;
+    mask-image: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3rem 1.5rem;
+  }
+
+  .d-none-mobile {
+    display: none !important;
+  }
+
+  .ambient-glow {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  header.header-light {
+    padding: 0.5rem 0 !important;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15, 81, 50, 0.08);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03) !important;
+  }
+
+  .logo img {
+    height: 48px !important;
+  }
+
+  header.scrolled .logo img {
+    height: 42px !important;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    background-color: rgba(15, 81, 50, 0.05);
+    color: var(--color-primary);
+    border-radius: 50%;
+    border: 1px solid rgba(15, 81, 50, 0.1);
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .hero-split {
+    padding-top: 130px;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  .hero-content-split {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-tagline-small {
+    font-size: 1rem;
+  }
+
+  .hero-title-huge {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitle-bold {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-tagline-italic {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description-clean {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn-cta {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-grid,
+  .vision-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid,
+  .team-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .therapies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .booking-form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .specialist-compact-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .specialist-compact-card .doctor-info {
+    text-align: center;
+  }
+
+  .process-steps {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .process-steps::before {
+    left: 40px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+  }
+
+  .step {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .step-number {
+    margin: 0;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
+    /* 1 card on mobile */
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Responsive Trust Strip Banner */
+  .trust-strip {
+    padding: 1.5rem 0;
+    background-color: var(--color-primary);
+  }
+  
+  .trust-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .trust-item:nth-child(n+3) {
+    display: none !important;
+  }
+  
+  .trust-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+  }
+  
+  .trust-icon {
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  .trust-text h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .trust-text p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .vision-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  /* Mobile Scroll Animations */
+  .service-card,
+  .therapy-card,
+  .doctor-card,
+  .blog-card,
+  .testimonial-card,
+  .step {
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.6s ease, opacity 0.6s ease !important;
+    transform: scale(0.88);
+    opacity: 0.5;
+    filter: blur(2px) grayscale(50%);
+  }
+
+  .service-card.mobile-focus,
+  .therapy-card.mobile-focus,
+  .doctor-card.mobile-focus,
+  .blog-card.mobile-focus,
+  .testimonial-card.mobile-focus,
+  .step.mobile-focus {
+    transform: scale(1.05);
+    opacity: 1;
+    filter: blur(0) grayscale(0);
+    z-index: 10;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+}
